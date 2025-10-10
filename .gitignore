@@ -15,7 +15,8 @@ docs/
 
 # Makefile
 Makefile 
+makefile
 
 # Coverage reports
 coverage/ 
-.gas-snapshot.json
+.gas-snapshot
