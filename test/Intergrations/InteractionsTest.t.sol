@@ -51,9 +51,6 @@ contract InteractionsTest is ZkSyncChainChecker, StdCheats, Test {
 
         assert(address(fundMe).balance == 0);
         assertEq(afterUserBalance + SEND_VALUE, preUserBalance);
-        assertEq(
-            preOwnerBalance + SEND_VALUE + originalFundMeBalance,
-            afterOwnerBalance
-        );
+        assertEq(preOwnerBalance + SEND_VALUE + originalFundMeBalance, afterOwnerBalance);
     }
 }
